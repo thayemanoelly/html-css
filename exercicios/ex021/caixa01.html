@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas</title>
+
+    <style>
+        h1 {
+            background-color: lightgray;
+            height: 41px;
+            width: 383px;
+            border-width: 10px;
+            border-style: solid;
+            border-color: black;
+
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            
+        }
+
+        a {
+            border-width: 1px;
+            padding: 5px;
+            border-style: solid;
+            color: black;
+        }
+
+        #titulodois {
+            font-family: Arial, Helvetica, sans-serif;
+            border-width: 5px;
+            height: 35px;
+            width: 500px;
+        }
+
+        em {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: blueviolet;
+            border-width: 1px;
+            padding: 5px;
+            border-style: solid;
+
+            margin-top: 10px;
+            margin-right: 214px;
+            margin-bottom: 10px;
+            margin-left: 214px;
+             
+            outline-width: 6px;
+            outline-style: dashed;
+            outline-color: chartreuse;
+        }
+
+        h2 {
+            text-align: center;
+            
+            background-color:aqua;
+            height: 28px;
+            width: 190px;
+
+            border: 4px solid darkgray;
+
+            padding: 10px;
+
+            margin: 20px auto 40px;
+
+            outline: 3px dashed rebeccapurple;
+        }
+
+        .pborder {
+            text-align: center;
+            width: 300px;
+            border: 5px solid burlywood;
+            padding: 5px;
+
+            
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Exemplo de Caixa box-level</h1>
+
+    <p>Um parágrafo é um exemplos de box-level, mas os <a href="#"> Links são exemplos de caixas inline-level</a> <br>
+        Vamos ver como tudo isso funciona.</p>
+    </p>
+
+    <h1 id="titulodois">Exemplos de Caixas inline-level</h1>
+
+        <p><em>Thaieny Te amo </em></p>
+
+    <dl>
+        <strong>
+            <dt>Margim</dt>
+        </strong>
+        <dd>Da borda para FORA.</dd>
+    </dl>
+
+    <dl>
+        <dt><strong>Padding</strong></dt>
+        <dd>Da borda para DENTRO.</dd>
+    </dl>
+
+    <h2>Vamos simplificar</h2>
+
+    <h3>ShortHands:</h3>
+     
+    <p>Para configurar a BORDA usar tudo em uma ordem só, a sequência é: <br>Border-Whidth, Border-Style, Border-Color.</p>
+
+    <p>Dentro da tag que vai configurar colocar assim na CSS:</p>
+    <p> p {
+        <br>
+        <p></p>
+    }
+    </p>
+    <p class="pborder">border: 10px solid dark </p>
+
+
+    <p>Para configurar a MARGIM usar tudo em uma ordem só, a sequência é: <br>Border-Whidth, Border-Style, Border-Color.</p>
+
+
+    <h3>ShortHands:</h3>
+     
+    <p>Para usar tudo em uma ordem só, a sequência é: <br>Border-Whidth, Border-Style, Border-Color.</p>
+
+    <p>Dentro da tag que vai configurar colocar assim na CSS:</p>
+    <p> p {
+        <br>
+        <p></p>
+    }
+    </p>
+    <p class="pborder">border: 10px solid dark </p>
+</body>
+</html>
